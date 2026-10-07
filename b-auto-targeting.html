@@ -46,10 +46,10 @@
         {
           continue;
         }
-        // Keep the earlier enemy if it has greater health.
-          if (target && target.health > enemy.health) {
+        // Keep the earlier target if it has greater health than enemy.
+        if (target && target.health > enemy.health) {
           continue;
-          }
+        }
           //If none of the previous conditionals are true, set target to enemy
           target = enemy;
       }
