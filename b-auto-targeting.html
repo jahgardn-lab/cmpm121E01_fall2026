@@ -39,9 +39,8 @@
     function chooseTarget(enemies) {
       let target = null;
       // Pick the enemy with the greatest current health.
-      //If all enemies have zero health no one will be targeted
+      //If all enemies have zero health no one will be targeted.
       for (const enemy of enemies) {
-        // If health is zero, that enemy is not alive.
         if (enemy.health <= 0)
         {
           continue;
