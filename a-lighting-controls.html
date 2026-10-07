@@ -28,10 +28,7 @@
     const swatch = document.querySelector("#swatch");
 
     function update() {
-        let item = colorArray[0];
-        for (let i = 0; i < colorArray.length; i++) {
-          if (i === colorIndex) item = colorArray[i];
-        }
+        let item = colorArray[colorIndex];
         label.textContent = item.name;
         swatch.style.backgroundColor = item.color;
       
